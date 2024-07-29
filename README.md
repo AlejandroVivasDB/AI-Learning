@@ -146,25 +146,38 @@ To run the code in this repository, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo-url
-    cd your-repo-directory
+    git clone https://github.com/AlejandroVivasDB/AI-Learning.git
+    cd AI-Learning
     ```
 
-2. Install the required dependencies:
+2. Create and activate a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/Scripts/activate  # On Windows
+    # or
+    source venv/bin/activate  # On Unix or MacOS
+    ```
+
+3. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
+    pip install transformers
+    pip install torch
+    pip install timm
+    pip install python-dotenv
     ```
 
-3. Set up environment variables by creating a `.env` file:
+4. Set up environment variables by creating a `.env` file:
     ```
     OPENAI_API_KEY=your_openai_api_key
     ```
 
-4. Run the main script:
+## Running the Code
+
+1. Run the main script:
     ```bash
     streamlit run main.py
     ```
-
 This will start a Streamlit application where you can upload an image and interact with the AI agent.
 
 ## Contributing
